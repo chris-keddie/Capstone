@@ -49,6 +49,13 @@ def plot_dist_by_dim(data, column, dim):
     plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
     plt.show()
 def df_hist_column_plot(df):
+	"""
+	Description: Generates a series of Histograms for every column in a DataFrame
+	
+	Inputs: df = DataFrame
+	
+	Outputs: A series of Histograms
+	"""
 	for column in df.columns:
 		plt.figure()
 		plt.title(f"Feature: {column}")
